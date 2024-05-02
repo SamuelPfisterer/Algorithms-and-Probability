@@ -81,16 +81,12 @@ class Main {
           }
           double oneLess = compute(n, n-1, 1) + compute(n, n-1, 0) + compute(n,n,0);
           
-          //double firstCase = 2*p*(lager/cups)*f*(ale/(cups-1)) + p*(lager/cups)*((1/f)*(1-p) + (1-p) +p*f*(lager-1)/(cups-1));
-          //Out.println(firstCase);
-          //Out.println(oneAle + onlyLager +oneMiss);
           Out.println(compute(n,n,0) + compute(n,n-1,0) +compute(n,n-1,1));
         }
         
         
         
-        // Output using Out.java class
-       // Out.println(n + n);
+        
     }
     
     private static double compute(double i, double j, double z){
