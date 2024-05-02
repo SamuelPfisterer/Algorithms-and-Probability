@@ -77,37 +77,7 @@ class Main {
         
         Out.println(sunFlow+" "+ shadowFlow);
         
-        /*
-        while(bfs(diff, sunEdges, parent, 0, n-1)){
-          
-          int v = n-1;
-          int u = parent[n-1];
-          int min = Integer.MAX_VALUE;
-          while(v != 0){
-            min = Math.min(min, diff[u][v]);
-            v = u;
-            u = parent[v];
-          }
-          
-          v = n-1;
-          u = parent[v];
-          while(v != 0){
-            diff[u][v] -= min;
-            
-            int a = diff[v][u] + min;
-            diff[v][u] += min;   //Math.min(capacity[v][u], a);
-            v = u;
-            u = parent[v];
-          }
-          
-          flowValue += min;
-        }
         
-        // Output using Out.java class
-        Out.println(flowValue);
-        System.out.println(""+flowValue);
-        
-        */
     }
     
     private static boolean bfs(int[][] diff, ArrayList<Integer>[] edges, int[] parent, int s, int t){
